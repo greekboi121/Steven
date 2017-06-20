@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :blogs
+  
+  get 'home', to: 'blogs#home'
+  get 'about', to: 'blogs#about'
+  get 'contact', to: 'blogs#contact'
+
+
 end
